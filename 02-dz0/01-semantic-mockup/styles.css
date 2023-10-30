@@ -1,0 +1,47 @@
+html, a {
+    color: white;
+}
+header {
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+nav {
+    background-color: orange;
+    padding: 1rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+main {
+    background-color: green;
+    padding: .5%;
+}
+
+article {
+    background-color: blue;
+    padding: 2%;
+    margin: 0.5rem;
+}
+
+footer {
+    background-color: purple;
+}
+
+footer p {
+    font-size: 2rem;;
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+p, h1 {
+    margin: 0;
+    padding: 1rem;
+}
