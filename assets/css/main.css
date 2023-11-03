@@ -1,4 +1,6 @@
+@import 'normalize.css';
 @import '../fonts/fonts.css';
+
 
 :root {
     --white: #ffffff;
