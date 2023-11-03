@@ -1,4 +1,7 @@
 @import '../fonts/fonts.css';
+@import '../../components/header/header.css';
+@import '../../components/section/section.css';
+@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
@@ -21,4 +24,21 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin-left: 160px;
+    height: 237px;
+}
+
+.section {
+    background: #F9FAFC;
+    height: 1036px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 384px;
 }
