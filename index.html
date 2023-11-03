@@ -6,14 +6,34 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__wrapper">
                 <img class="header__img" src="assets/images/square.png">
                 <img class="header__img" src="assets/images/circle.png">
                 <img class="header__img" src="assets/images/triangle.png">
-            </div>
+                <div class="menu menu-moveUp">
+                    <a class="menu__item">Components</a>
+                    <a class="menu__item">About</a>
+                    <a class="menu__item">Contact</a>
+                    <a class="menu__item_icon"><object data="assets/images/sun.svg"></object></a>
+                    <a class="menu__item_icon">Toggle</a>
+                    <a class="menu__item_icon"><object data="assets/images/moon.svg"></object></a>
+                </div>
             <h1 class="header__title">Reusable component library</h1>
+            <div class="menu menu-Fixed">
+                <a class="menu__item">All components</a>
+                <a class="menu__item">Elements</a>
+                <a class="menu__item">Containers</a>
+                <a class="menu__item">Templates</a>
+            </div>
         </header>
-        <section class="section"></section>
+        <section class="section">
+            <div class="section__card"></div>
+            <div class="section__card"></div>
+            <div class="section__card"></div>
+            <div class="section__card"></div>
+            <div class="section__card"></div>
+            <div class="section__card"></div>
+            <button class="section__button">Load more</button>
+        </section>
         <footer class="footer">
             <h2 class="footer__title">About</h2>
             <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>

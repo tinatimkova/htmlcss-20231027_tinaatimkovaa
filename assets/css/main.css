@@ -27,13 +27,14 @@
 }
 
 .header {
-    margin-left: 160px;
+    margin: 34px 165px 0;
     height: 237px;
 }
 
 .section {
     background: #F9FAFC;
     height: 1036px;
+    margin: 68px 165px;
 }
 
 .footer {
