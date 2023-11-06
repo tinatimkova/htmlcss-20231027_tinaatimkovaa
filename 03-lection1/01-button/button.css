@@ -10,7 +10,7 @@
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.btn_primary {
+.btn__primary {
     background: var(--primary);
     color: var(--white);
     text-align: center;
@@ -21,30 +21,32 @@
     line-height: normal; 
 }
 
-.btn_primary:not(.btn-disabled):hover {
+.btn__primary:not(.btn__primary_disabled):hover {
     background: var(--dark-blue);
 }
 
-.btn_secondary {
+.btn__secondary {
     background: var(--secondary);
     color: var(--white);
 }
 
-.btn_secondary:not(.btn-disabled):hover {
+.btn__secondary:not(.btn__secondary_disabled):hover {
     background: var(--deep-purple);
 }
 
-.btn_alt {
+.btn__alternate {
     background: var(--grey-3);
     color: var(--grey-4);
 }
 
-.btn_alt:not(.btn-disabled):hover {
+.btn__alternate:not(.btn__alternate_disabled):hover {
     background: var(--grey-4);
     color: var(--black);
 }
 
-.btn-disabled {
+.btn__primary_disabled,
+.btn__secondary_disabled,
+.btn__alternate_disabled {
     opacity: 0.5;
     cursor: default;
 }
