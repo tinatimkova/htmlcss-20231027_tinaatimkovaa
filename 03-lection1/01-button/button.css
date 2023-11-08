@@ -22,7 +22,8 @@
 }
 
 .btn__primary:not(.btn__primary_disabled):hover {
-    background: var(--dark-blue);
+    --primary: #2342C0;
+    background: var(--primary);
 }
 
 .btn__secondary {
@@ -31,7 +32,8 @@
 }
 
 .btn__secondary:not(.btn__secondary_disabled):hover {
-    background: var(--deep-purple);
+    --primary: #5028C6;
+    background: var(--primary);
 }
 
 .btn__alternate {
