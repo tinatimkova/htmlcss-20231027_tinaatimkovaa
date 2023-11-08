@@ -1,3 +1,8 @@
+.preview {
+    background-color: #F9FAFC;
+    padding: 68px 0;
+}
+
 .section__card {
     display: inline-block;
 }

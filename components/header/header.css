@@ -1,6 +1,10 @@
+
+.header {
+    background-color: var(--white);
+    padding: 96px 0 77px; 
+}
+
 .header__title {
-    color: var(--Black, #212429);
-    font-family: Inter;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
@@ -10,7 +14,6 @@
 .menu__item {
     color: var(--Black, #212429);
     text-align: right;
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
