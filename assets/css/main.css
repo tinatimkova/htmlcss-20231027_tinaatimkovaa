@@ -29,20 +29,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    margin: 34px 165px 0;
-    height: 237px;
-}
-
-.section {
-    background: #F9FAFC;
-    height: 1036px;
-    margin: 68px 165px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 384px;
+html, body {
+    height: 100%;
 }
