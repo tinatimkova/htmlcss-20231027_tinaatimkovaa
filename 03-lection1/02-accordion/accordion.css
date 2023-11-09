@@ -1,9 +1,11 @@
 /* Стилизация аккордеона */
-@import '../../assets/css/main.css';
+.wrapper {
+    max-width: 730px;
+    padding: 75px 166px 116px 165px;
+}
 
 .accordion {
-    width: 730px;
-    height: 144px;
+    color: var(--black);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -12,8 +14,8 @@
 }
 
 .accordion__item {
-    margin: 8px;
-    padding: 8px;
+    margin-bottom: 8px;
+    padding: 24px 32px;
     border: 1px solid var(--grey-3);
     border-radius: 5px;
 }
@@ -28,11 +30,9 @@
 
 .accordion__title {
     list-style: none;
-    padding: 24px 32px;
 }
 
 .accordion__text {
-    display: inline-block;
     color: var(--grey-4, #495057);
     padding: 0 48px 32px 32px;
     margin: 0;
