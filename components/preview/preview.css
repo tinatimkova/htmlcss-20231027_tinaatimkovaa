@@ -4,10 +4,14 @@
 }
 
 .preview__cards {
-    font-size: 0;
-    margin: -15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .preview__card {
-    margin: 15px;
+  flex-basis: 30%;
+  height: 367px;
 }
+
