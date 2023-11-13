@@ -1,6 +1,7 @@
 /* Стилизация кнопки */
 .btn {
-    padding: 15px 66px;
+    height: 48px;
+    width: 189px;
     border-radius: 8px;
     border: none;
     color: var(--white);
