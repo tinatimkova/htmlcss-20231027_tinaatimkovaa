@@ -42,6 +42,10 @@
     margin: 0.67em 0;
   }
 
+  h4, a, div {
+    font: inherit;
+  }
+
   ul {
     margin: 0px;
   }
