@@ -1,0 +1,20 @@
+.preview {
+    background-color: #F9FAFC;
+    padding: 68px 0;
+}
+
+.preview__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.preview__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 30%;
+  height: 367px;
+}
+

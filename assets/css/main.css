@@ -1,6 +1,12 @@
 @import 'normalize.css';
 @import '../fonts/fonts.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../components/header/header.css';
+@import '../../components/page/page.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 
 :root {
@@ -29,4 +35,7 @@
 .container {
     margin: 40px;
     max-width: 350px;
+}
+html, body {
+    height: 100%;
 }
