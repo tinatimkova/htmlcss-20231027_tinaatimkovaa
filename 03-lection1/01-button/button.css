@@ -1,7 +1,7 @@
 /* Стилизация кнопки */
 .btn {
     height: 48px;
-    width: 189px;
+    padding: 15px 66px 14px;
     border-radius: 8px;
     border: none;
     color: var(--white);
@@ -25,6 +25,7 @@
 
 .btn_secondary {
     background: var(--secondary);
+    padding: 15px 56px 14px;
 }
 
 .btn_secondary:not(:disabled):hover {
@@ -34,6 +35,7 @@
 .btn_alternate {
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
+    padding: 15px 61px 14px;
 }
 
 .btn_alternate:not(.btn:disabled):hover {
