@@ -1,17 +1,18 @@
 .skeleton {
-    max-width: 515px;
-    height: 136px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 32px 40px 24px 24px; /* margin botton is 32px - flex gap(8px) = 24px*/
 }
 
-.skeleton__lines {
+.skeleton__lines, .skeleton__header {
    display: flex;
    flex-direction: column;
-   align-content: center;
-   height: 100%;
    gap: 8px;
+}
+
+.skeleton__header {
+  margin-left: 80px;
+  margin-bottom: 24px;
 }
 
 .skeleton__avatar {
@@ -29,16 +30,10 @@
     background: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
-.skeleton__line_one {
+.skeleton__line_small {
   width: 33%;
 }
 
-.skeleton__line_two {
+.skeleton__line_medium {
   width: 50%;
-  margin-bottom: 24px;
-}
-
-.skeleton__line_one, 
-.skeleton__line_two {
-  margin-left: 80px;
 }
