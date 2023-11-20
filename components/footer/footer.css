@@ -3,11 +3,10 @@
     color: var(--black);
     font-family: Inter;
     font-style: normal;
-}
-
-.footer__container {
+    height: 130px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
