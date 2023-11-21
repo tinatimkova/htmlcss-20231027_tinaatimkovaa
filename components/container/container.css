@@ -1,10 +1,14 @@
 .container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.container_inner {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 56px;
     height: 100%;
     padding: 36px 165px 0;
-    max-width: 1110px;
 }
 
 

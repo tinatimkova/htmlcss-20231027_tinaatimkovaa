@@ -12,6 +12,10 @@
     line-height: 64px; /* 128% */
 }
 
+.header_inner {
+    background: transparent;
+}
+
 .menu__item {
     color: var(--Black, #212429);
     text-align: right;

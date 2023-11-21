@@ -1,0 +1,7 @@
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar ul {
+    padding: 0;
+}
