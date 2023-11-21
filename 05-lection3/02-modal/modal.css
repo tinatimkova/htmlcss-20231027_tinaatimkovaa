@@ -1,0 +1,41 @@
+.modal {
+    position: fixed;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #C4C4C4;
+    font-family: Inter;
+    line-height: 24px;
+    z-index: 1;
+  }
+  
+  .modal__window {
+    padding: 30px 40px 33px;
+    position: fixed;
+    border-radius: 8px;
+    background: #FFF;
+    max-width: 428px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+  }
+  
+  .modal__title {
+    margin: 0;
+    padding-bottom: 14px; 
+    color: #334D6E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  .modal__text {
+    color: var(--Gray-4, #495057);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
