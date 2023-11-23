@@ -43,10 +43,3 @@
   right: 12px;
   top: 12px;
 }
-
-.modal__btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
