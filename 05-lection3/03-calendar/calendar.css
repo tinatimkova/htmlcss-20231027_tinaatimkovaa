@@ -2,7 +2,7 @@
     display: inline-block;
     border: 1px solid var(--Gray-3, #ACB5BD);
     border-radius: 8px;
-    padding: 28px 30px 6px;
+    padding: 28px 26px 32px;
     width: 100%;
   }
   
