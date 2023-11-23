@@ -3,7 +3,6 @@
     color: var(--black);
     font-family: Inter;
     font-style: normal;
-    height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;

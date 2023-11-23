@@ -1,7 +1,7 @@
-.sidebar li {
+.sidebar__list-item {
     list-style-type: none;
 }
 
-.sidebar ul {
+.sidebar__list {
     padding: 0;
 }

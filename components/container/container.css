@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.container_inner {
+.container__inner {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 56px;
