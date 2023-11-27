@@ -6,13 +6,29 @@
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+    <div class="wrapper">
+        <div class="accordion">
+            <details class="accordion__item">
+                <summary class="accordion__title">
+                    String
+                </summary>
+                <p class="accordion__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__title">
+                    Array
+                </summary>
+                <p class="accordion__text">
+                    Array is a special kind of object, suited to storing and managing ordered data items.
+                </p>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__title">
+                    Object
+                </summary>
+                <p class="accordion__text">Object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.</p>
+            </details>
+            </div>
+        </div>
     </body>
 </html>
