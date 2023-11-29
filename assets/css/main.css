@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import '../fonts/fonts.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../components/header/header.css';
@@ -36,10 +37,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    margin: 40px;
-    max-width: 350px;
-}
 html, body {
     height: 100%;
 }
