@@ -1,15 +1,10 @@
 .background-image {
     width: 100%;
     height: 100%;
+    background-image: url('./public/forest_400.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-@media (max-width: 400px) {
-    .background-image {
-        background-image: url('./public/forest_400.jpg');
-    }
 }
 
 @media (min-width: 400px) {
