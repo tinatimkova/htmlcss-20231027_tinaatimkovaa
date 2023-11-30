@@ -31,15 +31,18 @@
 }
 
 .modal__text {
-  color: var(--Gray-4, #495057);
+  color: var(--grey-4, #495057);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   max-width: 348px;
 }
 
-.modal__close {
+.modal__close-icon {
+  width: 16px;
+  height: 16px;
   position: absolute;
   right: 12px;
   top: 12px;
+  fill: var(--grey-4);
 }

@@ -44,7 +44,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    fill: var(--grey-4, #495057);
+    color: var(--grey-4, #495057);
 }
 
 .accordion__item[open] .accordion__icon {
