@@ -6,32 +6,38 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <form class='input'>
-            <label class='input__label' for='text_input'>Label</label>
-             <div class='input__control'>
-            <input class='input__text' type='text' name='text_input' placeholder='Placeholder'>
+      <form style="padding-left: 50px;">
+        <div class='input input_default'>
+          <label class='input__label'>
+            <p>Label</p>
+           <div class='input__control'>
+            <input class='input__field' type='text' placeholder='Placeholder'>
+             <svg class='input__icon'></svg>
+            </label>
+           </div>
+        </div>
+        <div class='input input_success'>
+          <label class='input__label'>
+            <p>Success</p>
+            <div class='input__control'>
+              <input class='input__field' type='text' placeholder='Success'>
                <svg class='input__icon'>
-                 <use href=''></use>
+                <use href='../../assets/images/sprite.svg#success'></use>
                </svg>
+            </div>
+          </label>
+            </div>
+              <div class='input input_invalid'>
+                   <label class='input__label'>
+                    <p>Error</p>
+                     <div class='input__control'>
+                  <input class='input__field' type='text' placeholder='Error' >
+                    <svg class='input__icon'>
+                       <use href='../../assets/images/sprite.svg#error'></use>
+                     </svg>
+                  </div>
+                </label>
               </div>
-             <label class='input__label'>
-              <p>Success</p>
-               <div class='input__control input__control_success''>
-            <input class='input__text type='text' placeholder='Success'>
-              <svg class='input__icon'>
-                 <use href='../../assets/images/sprite.svg#success'></use>
-               </svg>
-               </div>
-            </label>
-             <label class='input__label'>
-              <p>Error</p>
-               <div class='input__control input__control_error'>
-            <input class='input__text input__text_error' type='text' placeholder='Error'>
-              <svg class='input__icon'>
-                 <use href='../../assets/images/sprite.svg#error'></use>
-               </svg>
-               </div>
-            </label>
-          </form>
+        </form>
     </body>
 </html>
