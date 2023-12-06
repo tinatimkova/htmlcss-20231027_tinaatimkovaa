@@ -1,12 +1,5 @@
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .toggle {
     position: relative;
-    width: fit-content;
   }
   
   .toggle__input {
