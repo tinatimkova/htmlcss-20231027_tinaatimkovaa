@@ -9,7 +9,7 @@
     flex-grow: 1;
 }
 
-.page__main_inner {
+.page__inner {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 56px;
