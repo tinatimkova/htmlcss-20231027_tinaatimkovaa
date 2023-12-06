@@ -6,12 +6,15 @@
         <link rel="stylesheet" href="./toggler.css">
     </head>
     <body>
-        <form>
+      <form style='display: flex; flex-direction: column; gap: 16px;'>
         <label class='toggle'>
             <input type='checkbox' class='toggle__input'>
             <div class='toggle__state'>
-                <svg  class='toggle__icon'>
-                  <use href='../../assets/images/sprite.svg#toggle'></use>
+                <svg  class='toggle__icon toggle__icon_off'>
+                  <use href='../../assets/images/sprite.svg#toggle_off'></use>
+                </svg>
+              <svg  class='toggle__icon toggle__icon_on'>
+                  <use href='../../assets/images/sprite.svg#toggle_on'></use>
                 </svg>
               <div class='toggle__label'>Off</div>
             </div>
@@ -19,8 +22,11 @@
           <label class='toggle'>
             <input type='checkbox' class='toggle__input' checked>
             <div class='toggle__state'>
-                <svg  class='toggle__icon'>
-                  <use href='../../assets/images/sprite.svg#toggle'></use>
+                <svg class='toggle__icon toggle__icon_off'>
+                  <use href='../../assets/images/sprite.svg#toggle_off'></use>
+                </svg>
+              <svg  class='toggle__icon toggle__icon_on'>
+                  <use href='../../assets/images/sprite.svg#toggle_on'></use>
                 </svg>
               <div class='toggle__label'>On</div>
             </div>
