@@ -1,5 +1,6 @@
 .radio {
   position: relative;
+  width: fit-content;
 }
 
 .radio__input {
@@ -21,6 +22,7 @@
    border-radius: 50%;
    width: 28px;
    height: 28px;
+   cursor: pointer;
 }
 
 .radio__control::before {
@@ -56,6 +58,7 @@
 
 .radio__input:disabled ~ .radio__state .radio__control {
   background: #DDE2E5;
+  cursor: not-allowed;
 }
 
 .radio__input:disabled ~ .radio__state .radio__label {
