@@ -21,5 +21,13 @@
       <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+  <symbol id='toggle_on'>
+    <rect x="0.5" y="0.5" width="51" height="27" rx="13.5" fill="#4263EB" stroke="#4263EB"/>
+  <rect x="26" y="2" width="24" height="24" rx="12" fill="white"/>
+  </symbol>
+  <symbol id='toggle_off'>
+    <rect x="0.5" y="0.5" width="51" height="27" rx="13.5" fill="" stroke="#DDE2E5"/>
+    <rect x="2" y="2" width="24" height="24" rx="12" fill="currentColor"/>
+  </symbol>
   </defs>
 </svg>
