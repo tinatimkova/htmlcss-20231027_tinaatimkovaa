@@ -5,22 +5,32 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <label class='burger-btn'>
+            <label class='burger-btn'>
             <input class='burger-btn__input' type='checkbox'>
             <svg class='burger-btn__icon'>
-              <use class='burger-btn__icon_open' href='#burger-button'/>
+              <use class='burger-btn__icon_open' href='../../assets/images/sprite.svg#burger-btn'/>
             </svg>
            </label>
             <div class='burger-menu'>
-            <div class='burger-menu__window'>
               <svg class='burger-menu__icon'>
-              <use class='burger-menu__icon_close' href='#close'>
+              <use class='burger-menu__icon_close' href='../../assets/images/sprite.svg#close'>
               </svg>
-            <div class='burger-menu__theme-toggler'>
+            <div class='burger-menu__theme-toggle'>
               <span class='burger-menu__theme-text'>Dark mode</span>
-              <svg class='burger-menu__toggler'><use href='#toggler'>       </svg>
+              <label class='burger-menu__toggle toggle'>
+                <input type='checkbox' class='toggle__input'>
+                <div class='toggle__state'>
+                    <svg  class='toggle__icon toggle__icon_off'>
+                      <use href='../../assets/images/sprite.svg#toggle_off'></use>
+                    </svg>
+                  <svg  class='toggle__icon toggle__icon_on'>
+                      <use href='../../assets/images/sprite.svg#toggle_on'></use>
+                    </svg>
+                </div>
+              </label>
             </div>
             <nav class='burger-menu__nav'>
               <h4 class='burger-menu__title'>Components</h4>
@@ -32,7 +42,6 @@
               <a class='burger-menu__link' href='#'>Custom form elements</a>
               <a class='burger-menu__link burger-menu__link_main-page' href='#'>Main page</a>
             </nav>
-            </div>
           </div>          
     </body>
 </html>
