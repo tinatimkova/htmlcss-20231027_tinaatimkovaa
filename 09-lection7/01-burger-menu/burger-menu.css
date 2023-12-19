@@ -1,55 +1,55 @@
 .burger-btn {
-  display: inline-block;
   position: absolute;
   cursor: pointer;
   padding: 16px 12px;
   z-index: 1;
+  display: inline-block;
+}
+
+.burger-btn:has(.burger-btn__input:checked) ~ .burger-menu {
+  transform: none;
+}
+
+.burger-btn__input {
+  position: absolute;
+  left: -100%;
+} 
+
+.burger-btn__input:focus ~ .burger-btn__icon,
+.burger-btn:has(.burger-btn__input:focus) ~ .burger-menu .burger-menu__icon {
+  background: var(--grey-2);
 }
 
 .burger-btn__input:checked ~ .burger-btn__icon {
-    opacity: 0;
-  }
-  
-  .burger-btn:has(.burger-btn__input:checked) ~ .burger-menu {
-    transform: none;
-  }
-  
-  .burger-btn__icon,
+  opacity: 0;
+}
+
+.burger-btn__icon,
   .burger-menu__icon {
     width: 24px;
     height: 24px;
     padding: 4px;
   }
-  
-  .burger-menu__icon {
-    border-radius: 50%;
-  }
-  
-  .burger-btn__input:focus ~ .burger-btn__icon,
-  .burger-btn:has(.burger-btn__input:focus) ~ .burger-menu .burger-menu__icon {
-    background: var(--grey-2);
-  }
-  
-  .burger-btn__input {
-    position: absolute;
-    left: -100%;
-  } 
-  
+
   .burger-menu {
     position: fixed;
+    width: 100vw;
+    height: 100vh;
     font-size: 16px;
     line-height: 24px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     background: var(--grey-1);
-    width: 100vw;
-    height: 100vh;
     padding: 16px;
     transform: translateX(-100vw);
     transition: transform 250ms ease-in-out;
     overflow-y: auto;
   }
+
+.burger-menu__icon {
+    border-radius: 50%;
+}
   
   .burger-menu__theme-toggle {
     display: flex;
