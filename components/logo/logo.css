@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .logo__img {
+    background: #212429;
+  }
+  
+  .logo__img_square {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo__img_circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+  }
+  
+  .logo__img_triangle {
+    border-left: 32px solid black;
+    border-top: 32px solid white;
+  }
