@@ -3,6 +3,15 @@
   width: fit-content;
 }
 
+.toggle__label {
+  color: var(--grey-4, #495057);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
 .toggle__input {
   position: absolute;
   left: -100vw;
@@ -15,43 +24,47 @@
 }
 
 .toggle__icon {
+  position: relative;
   width: 52px;
   height: 28px;
+  border: 1px solid var(--grey-2);
+  border-radius: 1.5em;
   cursor: pointer;
+  transition: background-color 500ms ease-in-out, border-color 500ms ease-in-out;
 }
 
-.toggle__icon_off {
-fill: white;
-color: #DDE2E5;
+.toggle__icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.5px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--grey-2);
+  border-radius: 100%;
+  transition: left 250ms ease-in-out;
 }
 
-.toggle__icon_on {
-display: none;
+.toggle__input:checked ~ .toggle__state .toggle__icon {
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
-.toggle__label {
-  color: var(--grey-4, #495057);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
+.toggle__input:checked ~ .toggle__state .toggle__icon:before {
+  left: 24px;
+  background-color: #fff;
 }
 
-.toggle__input:checked ~ .toggle__state .toggle__icon_on {
-  display: inline-block;
+.toggle__input:disabled ~ .toggle__state .toggle__icon {
+  background-color: var(--grey-2);
+  cursor: auto;
 }
 
-.toggle__input:checked ~ .toggle__state .toggle__icon_off {
-display: none;
+.toggle__input:disabled ~ .toggle__state .toggle__icon:before {
+  background-color: var(--grey-3);
 }
 
 .toggle__input:focus ~ .toggle__state .toggle__label {
   text-decoration: underline;
-}
-
-.toggle__input:disabled ~ .toggle__state .toggle__icon {
-  color: #ACB5BD;
-  fill: #DDE2E5;
-  cursor: auto;
 }
