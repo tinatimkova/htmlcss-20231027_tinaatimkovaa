@@ -1,0 +1,22 @@
+.sidebar {
+    color: var(--black, #212429);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sidebar__list-item {
+    list-style-type: none;
+}
+
+.sidebar__section-title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.sidebar__list {
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+    padding: 0;
+}

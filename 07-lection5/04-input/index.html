@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Страница с полем ввода -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./input.css">
+    </head>
+    <body>
+      <form style="padding-left: 50px;">
+        <div class='input'>
+          <label class='input__label'>Label</label>
+           <div class='input__control'>
+            <input class='input__field' type='text' placeholder="Placeholder">
+             <svg class='input__icon'>
+              <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+              <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+             </svg>
+           </div>
+        </div>
+        <div class='input input_success'>
+          <label class='input__label'>Success</label>
+            <div class='input__control'>
+              <input class='input__field' type='text' placeholder="Success">
+               <svg class='input__icon'>
+                <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+                <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+               </svg>
+            </div>
+            </div>
+              <div class='input input_invalid'>
+                   <label class='input__label'>Error</label>
+                     <div class='input__control'>
+                  <input class='input__field' type='text' placeholder="Error">
+                    <svg class='input__icon'>
+                       <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+                       <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+                    </svg>
+                  </div>
+              </div>
+        </form>
+    </body>
+</html>
