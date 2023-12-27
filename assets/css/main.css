@@ -40,3 +40,8 @@
 html, body {
     height: 100%;
 }
+
+.preload * {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+  }

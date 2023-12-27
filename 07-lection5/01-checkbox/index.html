@@ -5,12 +5,13 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
+    <body class="preload">
       <form style="display:flex; flex-direction:column; gap:16px;">
         <label class='checkbox'>
             <input type='checkbox' class='checkbox__input'>
             <div class='checkbox__state'>
               <div class='checkbox__control'>
+                <div class='checkbox__shadow'></div>
                 <svg class='checkbox__icon'>
                     <use href="../../assets/images/sprite.svg#checkbox"></use>
                 </svg>
@@ -22,6 +23,7 @@
             <input type='checkbox' class='checkbox__input' checked>
             <div class='checkbox__state'>
               <div class='checkbox__control'>
+                <div class='checkbox__shadow'></div>
                 <svg class='checkbox__icon'>
                     <use href="../../assets/images/sprite.svg#checkbox"></use>
                 </svg>
@@ -39,4 +41,5 @@
             </label>
           </form>
     </body>
+    <script src="./checkbox.js"></script>
 </html>
