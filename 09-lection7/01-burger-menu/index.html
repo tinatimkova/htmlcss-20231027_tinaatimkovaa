@@ -4,29 +4,25 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../burger-btn/burger-btn.css">
         <script defer src="./burger-menu.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-            <label class='burger-btn'>
+          <label class='burger-btn'>
             <input class='burger-btn__input' type='checkbox'>
             <svg class='burger-btn__icon'>
               <use class='burger-btn__icon_open' href='../../assets/images/sprite.svg#burger-btn'/>
               <use class='burger-btn__icon_close' href='../../assets/images/sprite.svg#close'>
             </svg>
-           </label>
+          </label>
             <div class='burger-menu'>
             <div class='burger-menu__theme-toggle'>
               <span class='burger-menu__theme-text'>Dark mode</span>
               <label class='burger-menu__toggle toggle'>
                 <input type='checkbox' class='toggle__input'>
                 <div class='toggle__state'>
-                    <svg  class='toggle__icon toggle__icon_off'>
-                      <use href='../../assets/images/sprite.svg#toggle_off'></use>
-                    </svg>
-                  <svg  class='toggle__icon toggle__icon_on'>
-                      <use href='../../assets/images/sprite.svg#toggle_on'></use>
-                    </svg>
+                  <div class='toggle__icon'></div>
                 </div>
               </label>
             </div>
