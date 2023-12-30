@@ -19,6 +19,8 @@
   }
   
   .logo__img_triangle {
+    height: 0;
+    background: transparent;
     border-left: 32px solid black;
     border-top: 32px solid white;
   }

@@ -8,11 +8,32 @@
         <div class="page">
         <header class="header">
             <div class="container">
-                <div class="logo">
+                <div class="header__top">
+                <div class="header__logo logo">
                     <span class="logo__img logo__img_square"></span>
                     <span class="logo__img logo__img_circle"></span>
                     <span class="logo__img logo__img_triangle"></span>
                 </div>
+                <nav class="header__nav">
+                    <a class="header__nav-link">Components</a>
+                    <a class="header__nav-link">About</a>
+                    <a class="header__nav-link">Contact</a>
+                </nav>
+                <div class="header__theme">
+                   <svg class="header__theme-icon">
+                    <use class="header__theme-icon_light" href="assets/images/sprite.svg#sun" />
+                   </svg>
+                   <label class='header__theme-toggle toggle'>
+                    <input type='checkbox' class='toggle__input'>
+                    <div class='toggle__state'>
+                      <div class='toggle__icon'></div>
+                    </div>
+                  </label>
+                   <svg class="header__theme-icon">
+                    <use class="header__theme-icon_dark" href="assets/images/sprite.svg#moon" />
+                   </svg>
+                </div>
+            </div>
             <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
