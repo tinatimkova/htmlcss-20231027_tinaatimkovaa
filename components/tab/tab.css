@@ -1,0 +1,16 @@
+.tabs__scroller {
+    display: flex;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.tabs__input {
+    display: none;
+}
+
+#all-tab:checked ~ .tabs__scroller .tabs__label[for=all-tab],
+#complex-tab:checked ~ .tabs__scroller .tabs__label[for=complex-tab],
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for=simple-tab] {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}

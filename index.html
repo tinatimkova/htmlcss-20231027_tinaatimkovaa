@@ -34,7 +34,25 @@
                    </svg>
                 </div>
             </div>
+
             <h1 class="header__title">Reusable component library</h1>
+            <div class="tabs">
+                <input class="tabs__input" type="radio" id="all-tab" name="tab" checked />
+                <input class="tabs__input" type="radio" id="complex-tab" name="tab" />
+                <input class="tabs__input" type="radio" id="simple-tab" name="tab" />
+    
+                <div class="tabs__scroller">
+                    <label class="tabs__label" for="all-tab">All components</label>
+                    <label class="tabs__label" for="complex-tab">Complex</label>
+                    <label class="tabs__label" for="simple-tab">Simple</label>
+                </div>
+                <div class="tabs__content tabs__content_complex">
+                    <!-- Сложные компоненты -->
+                </div>
+                <div class="tabs__content tabs__content_simple">
+                    <!-- Простые компоненты -->
+                </div>
+            </div>
             </div>
         </header>
         <main class="preview page__main">

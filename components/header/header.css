@@ -6,12 +6,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
+    color: var(--grey-3);
 }
 
 .header__title {
     font-size: 50px;
     font-weight: 500;
     line-height: 64px; /* 128% */
+    color: var(--black); 
 }
 
 .header_inner {
@@ -30,10 +32,8 @@
 
 .header__nav {
     display: flex;
-    flex: row;
     gap: 24px;
     align-items: center;
-    color: var(--grey-3);
 }
 
 .header__theme {
