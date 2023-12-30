@@ -21,7 +21,7 @@
 
 .footer_inner {
     background: transparent;
-    color: var(--Gray-3, #ACB5BD);
+    color: var(--grey-3);
     font-size: 12px;
     padding: 56px 0;
     font-weight: 500;

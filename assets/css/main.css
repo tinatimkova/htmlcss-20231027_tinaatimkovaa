@@ -14,7 +14,7 @@
 @import '../../03-lection1/02-accordion/accordion.css';
 @import '../../components/logo/logo.css';
 @import '../../07-lection5/03-toggler/toggler.css';
-
+@import '../../05-lection3/01-tooltip/tooltip.css';
 
 :root {
     --white: #ffffff;
