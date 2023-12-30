@@ -1,11 +1,23 @@
 .card {
-    color: var(--Black, #212429);
+    color: var(--black, #212429);
     border-radius: 12px;
     background: var(--white);
-    /* Card Shadow */
-    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05); /* Card Shadow */
     text-align: center;
+    font-family: Roboto;
     font-size: 21px;
     font-weight: 500;
+    font-style: normal;
     line-height: normal;
+}
+
+.card__title {
+    
+}
+
+.card__category {
+    color: var(--grey-4);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0 32px;
 }

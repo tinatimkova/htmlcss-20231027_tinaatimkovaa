@@ -3,10 +3,6 @@
     color: var(--black);
     font-family: Inter;
     font-style: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer__title {
