@@ -13,6 +13,7 @@
 .histogram__top {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .histogram__title {

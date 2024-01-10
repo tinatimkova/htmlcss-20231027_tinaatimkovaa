@@ -15,6 +15,8 @@
 @import '../../components/logo/logo.css';
 @import '../../07-lection5/03-toggler/toggler.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../06-lection4/01-avatar/avatar.css';
+@import '../../05-lection3/03-calendar/calendar.css';
 
 :root {
     --white: #ffffff;

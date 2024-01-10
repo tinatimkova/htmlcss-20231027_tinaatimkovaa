@@ -10,4 +10,9 @@
     object-fit: cover;
     border-radius: 50%;
   }
+
+  .avatar_lg {
+    width: 160px;
+    height: 160px;
+  }
   

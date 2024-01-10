@@ -25,7 +25,7 @@
   .tooltip__trigger:hover ~ .tooltip__bubble {
      visibility: visible;
   }
-  
+
   .tooltip__bubble:before {
     position: absolute;
     content: '';
@@ -34,6 +34,10 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .tooltip__bubble_visible {
+    visibility: visible;
   }
 
   .tooltip__icon {
