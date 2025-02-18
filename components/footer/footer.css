@@ -3,16 +3,16 @@
     color: var(--black);
     font-family: Inter;
     font-style: normal;
+    text-align: center;
+    font-weight: 500;
 }
 
 .footer__title {
     font-size: 38px;
-    font-weight: 500;
     line-height: 48px; 
 }
 
 .footer__description {
-    text-align: center;
     max-width: 640px;
     font-size: 16px;
     font-weight: 400;
@@ -20,12 +20,8 @@
 }
 
 .footer_inner {
-    background: transparent;
-    color: var(--grey-3);
-    font-size: 12px;
-    padding: 56px 0;
-    font-weight: 500;
     line-height: 18px; /* 150% */
     letter-spacing: 0.48px;
-    text-transform: uppercase;
+    max-width: 50%;
+    margin: 2.5rem auto;
 }

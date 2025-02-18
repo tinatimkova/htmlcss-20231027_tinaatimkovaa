@@ -11,7 +11,7 @@
     border-radius: 50%;
   }
 
-  .avatar_lg {
+  .avatar_component-preview {
     width: 160px;
     height: 160px;
   }
