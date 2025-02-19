@@ -14,11 +14,6 @@
                     <span class="logo__img logo__img_circle"></span>
                     <span class="logo__img logo__img_triangle"></span>
                 </div>
-                <nav class="header__nav">
-                    <a class="header__nav-link">Components</a>
-                    <a class="header__nav-link">About</a>
-                    <a class="header__nav-link">Contact</a>
-                </nav>
                 <div class="header__theme">
                    <svg class="header__theme-icon">
                     <use class="header__theme-icon_light" href="assets/images/sprite.svg#sun" />
@@ -35,6 +30,12 @@
                 </div>
             </div>
             <h1 class="header__title">Reusable component library</h1>
+            <nav class="tabs header__tabs">
+                <a class="tab tab_active">All components</a>
+                <a class="tab">Atoms</a>
+                <a class="tab">Molecules</a>
+                <a class="tab">Organisms</a>
+            </nav>
             </div>
         </header>
         <main class="preview page__main">
@@ -172,10 +173,13 @@
                 </div>
             </div>
         </main>
-        <footer class="footer footer_inner">
-            <h2 class="footer__title">About</h2>
-            <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+        <footer class="footer">
+            <div class="container footer_inner">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </div>
         </footer>
         </div>
+        <script src="./components/tabs/tabs.js"></script>
     </body>
 </html>

@@ -9,13 +9,9 @@
 }
 
 .header__title {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 64px; /* 128% */
-}
-
-.header_inner {
-    background: transparent;
 }
 
 .header__top {
@@ -28,12 +24,11 @@
     flex-grow: 1;
 }
 
-.header__nav {
+.header__tabs {
     display: flex;
     flex: row;
     gap: 24px;
     align-items: center;
-    color: var(--grey-3);
 }
 
 .header__theme {

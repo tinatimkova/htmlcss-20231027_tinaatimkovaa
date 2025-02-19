@@ -1,0 +1,9 @@
+.tab {
+    color: var(--grey-3); 
+    cursor: pointer;
+}
+
+.tab_active {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
