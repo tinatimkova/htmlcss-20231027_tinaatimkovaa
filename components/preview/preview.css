@@ -10,9 +10,5 @@
 }
 
 .preview__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   flex-basis: 30%;
-  height: 367px;
 }

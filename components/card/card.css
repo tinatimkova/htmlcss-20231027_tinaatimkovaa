@@ -1,6 +1,7 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     color: var(--black, #212429);
     border-radius: 12px;
     background: var(--white);
@@ -15,10 +16,11 @@
 }
 
 .card__body {
-    flex-grow: 1;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .card__category {
@@ -26,4 +28,8 @@
     font-size: 16px;
     font-weight: 400;
     padding-top: 6px;
+}
+
+.card__link {
+    height: 100%;
 }

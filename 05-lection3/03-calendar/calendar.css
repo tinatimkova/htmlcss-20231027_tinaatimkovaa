@@ -17,11 +17,11 @@
   
   .calendar__wrapper {
     position: relative;
-    padding-bottom: 100%;
+    /* padding-bottom: 100%; */
   }
   
   .calendar__inner {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
@@ -32,7 +32,7 @@
   }
   
   .calendar__item {
-    color: var(--334-d-6-e, #334D6E);
+    color: #334D6E;
     text-align: center;
     font-family: Source Sans Pro;
     font-size: 16px;
@@ -49,7 +49,7 @@
   }
   
   .calendar__item_day {
-    color: var(--90-a-0-b-7, #90A0B7);
+    color: #90A0B7;
     text-align: center;
     font-family: Inter;
     font-size: 14px;
