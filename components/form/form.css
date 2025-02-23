@@ -1,0 +1,7 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
