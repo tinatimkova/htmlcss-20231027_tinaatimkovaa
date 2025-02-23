@@ -3,7 +3,8 @@
     cursor: pointer;
 }
 
-.tab_active {
+.tab_active, 
+.tab:hover  {
     color: var(--black);
     border-bottom: 5px solid var(--black);
 }

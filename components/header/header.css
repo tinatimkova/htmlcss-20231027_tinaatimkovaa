@@ -2,7 +2,7 @@
 .header {
     background-color: var(--white);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
@@ -12,6 +12,8 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: 64px; /* 128% */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .header__top {
@@ -22,13 +24,6 @@
 
 .header__logo {
     flex-grow: 1;
-}
-
-.header__tabs {
-    display: flex;
-    flex: row;
-    gap: 24px;
-    align-items: center;
 }
 
 .header__theme {

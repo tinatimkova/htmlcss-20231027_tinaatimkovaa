@@ -1,0 +1,6 @@
+.tabs {
+    display: flex;
+    flex: row;
+    gap: 24px;
+    align-items: center;
+}
