@@ -46,3 +46,8 @@
   top: 12px;
   fill: var(--grey-4);
 }
+
+.modal_open {
+  display: block;
+  position: static;
+}
