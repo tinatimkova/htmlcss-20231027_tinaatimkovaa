@@ -52,3 +52,9 @@
     opacity: 0.5;
     pointer-events: none;
 }
+
+.btn_type_preview {
+    height: 2rem;
+    padding: .375rem 1rem;
+    margin-top: .7em;
+  }

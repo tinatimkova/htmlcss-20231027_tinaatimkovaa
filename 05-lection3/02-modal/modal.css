@@ -58,16 +58,8 @@
   left: 0;
   transform: none;
   max-width: 250px;
+  padding: 1rem;
   border: 1px solid #495057;
   text-align: left;
-}
-
-.modal__btn_type_preview {
-  height: 2rem;
-  padding: .375rem 1rem;
-  margin-top: .7em;
-}
-
-.modal__input_type_preview {
-  height: 1.5em;
+  pointer-events: none;
 }
