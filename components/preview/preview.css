@@ -12,8 +12,3 @@
 .preview__card {
   flex-basis: 30%;
 }
-
-.preview__modal {
-  display: block;
-  position: static;
-}

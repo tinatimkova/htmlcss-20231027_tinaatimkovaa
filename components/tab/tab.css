@@ -1,10 +1,25 @@
 .tab {
     color: var(--grey-3); 
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
-.tab_active, 
-.tab:hover  {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
+.tab:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0px;
+    margin: auto;
+    background: var(--black);
 }
+
+.tab_active, .tab:hover {
+    color: var(--black);
+}
+
+.tab_active:after, 
+.tab:hover:after {
+    width: 100%;
+    transition: width .5s ease, color .5s ease;
+}
+
