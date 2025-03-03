@@ -20,6 +20,14 @@
     line-height: 24px;
 }
 
-.footer_inner {
+.footer__content {
    width: 50%;
+   margin: 71px auto;
+}
+
+.footer_inner {
+    font-size: 12px;
+    color: var(--grey-3);
+    text-transform: uppercase;
+    padding: 56px 0;
 }

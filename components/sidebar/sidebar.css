@@ -5,10 +5,6 @@
     font-weight: 400;
 }
 
-.sidebar__list-item {
-    list-style-type: none;
-}
-
 .sidebar__section-title {
     font-size: 20px;
     line-height: 26px;
@@ -19,4 +15,23 @@
     font-size: 14px;
     line-height: 22px; /* 157.143% */
     padding: 0;
+}
+
+.sidebar__list-item {
+    list-style-type: none;
+    margin-bottom: 4px;
+}
+
+.sidebar__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 200ms ease-in-out;
+}
+
+.sidebar__link:hover {
+    color: var(--notification);
 }

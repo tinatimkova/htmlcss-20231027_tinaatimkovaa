@@ -2,3 +2,10 @@
     max-width: 1110px;
     margin: auto;
 }
+
+.container_inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    height: 100%;
+}
