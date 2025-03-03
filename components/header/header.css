@@ -1,6 +1,5 @@
 
 .header {
-    background-color: var(--white);
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
@@ -12,14 +11,17 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: 64px; /* 128% */
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 40px;
 }
 
 .header__top {
     display: flex; 
     justify-content: space-between;
     padding: 24px 0 38px;
+}
+
+.header__top_inner {
+    padding-bottom: 60px;
 }
 
 .header__logo {

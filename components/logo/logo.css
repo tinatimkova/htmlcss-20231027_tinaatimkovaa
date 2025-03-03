@@ -22,5 +22,5 @@
     height: 0;
     background: transparent;
     border-left: 32px solid black;
-    border-top: 32px solid white;
+    border-top: 32px solid transparent;
   }

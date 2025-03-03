@@ -4,12 +4,16 @@
     height: 100%;
 }
 
+.page_inner {
+    background-color: var(--grey-1);
+}
+
 .page__main {
     flex-grow: 1;
     background-color: var(--grey-1);
 }
 
-.page__inner {
+.page__main_inner {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 56px;
