@@ -1,6 +1,8 @@
-.tabs {
+.tabs__menu {
     display: flex;
     flex: row;
     gap: 24px;
     align-items: center;
+    list-style: none;
+    padding: 0;
 }

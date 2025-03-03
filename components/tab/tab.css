@@ -13,6 +13,12 @@
     background: var(--black);
 }
 
+.tab__link {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .tab_active, .tab:hover {
     color: var(--black);
 }
