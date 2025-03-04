@@ -44,15 +44,113 @@
                     </ul>
                 </aside>
                 <div class="component">
-                    <h3 class="component__title">Custom form elements</h3>
-                    <ul class="tabs__menu">
-                        <li class="tab tab_active" id="html"><a href="#" class="tab__link">html</a></li>
-                        <li class="tab" id="css"><a href="#" class="tab__link">css</a></li>
-                    </ul>
-                    <pre>
-                        <code>
-                        </code>
-                    </pre>
+                    <div class='component__display'>
+                        <h3 class="component__title">Custom form elements</h3>
+                        <div class="form form_type_component">
+                        <form class="form__input-group">
+                            <label class='checkbox'>
+                                <input type='checkbox' class='checkbox__input'>
+                                <div class='checkbox__state'>
+                                  <div class='checkbox__control'>
+                                    <div class='checkbox__shadow'></div>
+                                    <svg class='checkbox__icon'>
+                                        <use href="../../assets/images/sprite.svg#checkbox"></use>
+                                    </svg>
+                                  </div>
+                                  <div class='checkbox__label'>Default</div>
+                                </div>
+                              </label> 
+                              <label class='checkbox'>
+                                <input type='checkbox' class='checkbox__input' checked>
+                                <div class='checkbox__state'>
+                                  <div class='checkbox__control'>
+                                    <div class='checkbox__shadow'></div>
+                                    <svg class='checkbox__icon'>
+                                        <use href="../../assets/images/sprite.svg#checkbox"></use>
+                                    </svg>
+                                  </div>
+                                  <div class='checkbox__label'>Checked</div>
+                                </div>
+                              </label>  
+                              <label class='checkbox'>
+                                <input type='checkbox' class='checkbox__input' disabled>
+                                <div class='checkbox__state'>
+                                  <div class='checkbox__control'>
+                                  </div>
+                                  <div class='checkbox__label'>Disabled</div>
+                                </div>
+                                </label>
+                            </form>
+                            <form class="form__input-group">
+                                </label>
+                                <label class='radio'>
+                                  <input type='radio' name='radio' class='radio__input'>
+                                    <div class='radio__state'>
+                                      <div class='radio__control'></div>
+                                      <div class='radio__label'>Default</div>
+                                    </div>
+                                </label>
+                                <label class='radio'>
+                                  <input type='radio' name='radio' class='radio__input' checked>
+                                    <div class='radio__state'>
+                                      <div class='radio__control'></div>
+                                      <div class='radio__label'>Selected</div>
+                                    </div>
+                                </label>
+                                <label class='radio'>
+                                  <input type='radio' name='radio' class='radio__input' disabled>
+                                    <div class='radio__state'>
+                                      <div class='radio__control'></div>
+                                      <div class='radio__label'>Disabled</div>
+                                    </div>
+                                </label>
+                            </form>
+                            <form class="form__input-group">
+                                <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input'>
+                                    <div class='toggle__state'>
+                                      <div class='toggle__icon'></div>
+                                      <div class='toggle__label'>Off</div>
+                                    </div>
+                                  </label>
+                                  <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input' checked>
+                                    <div class='toggle__state'>
+                                      <div class='toggle__icon'></div>
+                                      <div class='toggle__label'>On</div>
+                                    </div>
+                                  </label>
+                                  <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input' disabled>
+                                    <div class='toggle__state'>
+                                      <div class='toggle__icon'></div>
+                                      <div class='toggle__label'>Disabled</div>
+                                    </div>
+                                  </label>
+                              </form>
+                            </div>
+                        <ul class="tabs__menu">
+                            <li class="tab tab_active" id="html"><a href="#" class="tab__link">html</a></li>
+                            <li class="tab" id="css"><a href="#" class="tab__link">css</a></li>
+                        </ul>
+                    </div>
+                    <div class="component__code">
+                        <pre class="code-snippet"><code class="code-snippet__html">&lt;ul&gt;
+    &lt;li&gt;
+        &lt;input type="radio" id="huey" name="drone" value="huey" checked&gt;
+        &lt;label for="huey"&gt;&lt;/label&gt;
+    &lt;li&gt;
+    &lt;li&gt;
+        &lt;input type="radio" id="huey" name="drone" value="huey" checked&gt;
+        &lt;label for="huey"&gt;&lt;/label&gt;
+    &lt;li&gt;
+    &lt;li&gt;
+        &lt;input type="radio" id="huey" name="drone" value="huey" checked&gt;
+        &lt;label for="huey"&gt;&lt;/label&gt;
+    &lt;li&gt;
+&lt;/ul&gt;
+                        </code></pre>
+                    </div>
                 </div>
             </div>
         </main>

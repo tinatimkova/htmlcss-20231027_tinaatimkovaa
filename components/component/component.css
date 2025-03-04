@@ -1,6 +1,10 @@
 .component {
     background: var(--white); 
-    padding: 32px 48px 64px;
+}
+
+.component__display {
+    border-bottom: 1px solid var(--grey-2);
+    padding: 32px 48px 0;
 }
 
 .component__title {
@@ -10,4 +14,8 @@
     font-weight: 400;
     font-style: normal;
     margin: 0;
+}
+
+.component__code {
+    padding: 50px 48px 64px;
 }

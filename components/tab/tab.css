@@ -1,7 +1,6 @@
 .tab {
     color: var(--grey-3); 
     cursor: pointer;
-    padding-bottom: 5px;
 }
 
 .tab:after {

@@ -1,7 +1,19 @@
-.form {
+.form_type_preview {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
     grid-gap: 1rem;
+}
+
+.form_type_component {
+    display: flex;
+    gap: 2rem;
+    padding: 58px 0 64px;
+} 
+
+.form__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
