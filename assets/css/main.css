@@ -24,6 +24,7 @@
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/logo/logo.css';
 @import '../../components/preview/preview.css';
+@import '../../components/code-snippet/code-snippet.css';
 
 
 :root {
