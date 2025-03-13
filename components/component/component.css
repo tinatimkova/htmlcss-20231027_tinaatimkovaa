@@ -19,3 +19,7 @@
 .component__code {
     padding: 50px 48px 64px;
 }
+
+.component__display_form-elems {
+    border: none;
+}

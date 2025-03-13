@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Custom Form Elements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+
+<body>
+  <div class="page page_inner">
+    <header class="header">
+      <div class="container">
+        <div class="header__top header__top_inner">
+          <div class="header__logo logo">
+            <span class="logo__img logo__img_square"></span>
+            <span class="logo__img logo__img_circle"></span>
+            <span class="logo__img logo__img_triangle"></span>
+          </div>
+          <div class="header__theme">
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_light" href="../../assets/images/sprite.svg#sun" />
+            </svg>
+            <label class='header__theme-toggle toggle'>
+              <input type='checkbox' class='toggle__input'>
+              <div class='toggle__state'>
+                <div class='toggle__icon'></div>
+              </div>
+            </label>
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_dark" href="../../assets/images/sprite.svg#moon" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="container container_inner">
+        <aside class="sidebar">
+          <h4 class="sidebar__section-title">Components</h4>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Modal</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Tooltip</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Avatar</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Calendar</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Histogram</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+          </ul>
+        </aside>
+        <div class="component">
+          <div class='component__display component__display_form-elems'>
+            <h3 class="component__title">Custom form elements</h3>
+            <form class="form form_type_component-page">
+              <div class="form__inputs">
+              <div class="form__input-group">
+              <label class='checkbox'>
+                <input type='checkbox' class='checkbox__input'>
+                <div class='checkbox__state'>
+                  <div class='checkbox__control'>
+                    <div class='checkbox__shadow'></div>
+                    <svg class='checkbox__icon'>
+                      <use href="../../assets/images/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                  <div class='checkbox__label'>Default</div>
+                </div>
+              </label>
+              <label class='checkbox'>
+                  <input type='checkbox' class='checkbox__input' checked>
+                  <div class='checkbox__state'>
+                    <div class='checkbox__control'>
+                      <div class='checkbox__shadow'></div>
+                      <svg class='checkbox__icon'>
+                        <use href="../../assets/images/sprite.svg#checkbox"></use>
+                      </svg>
+                    </div>
+                    <div class='checkbox__label'>Checked</div>
+                  </div>
+                </label>
+                <label class='checkbox'>
+                  <input type='checkbox' class='checkbox__input' disabled>
+                  <div class='checkbox__state'>
+                    <div class='checkbox__control'>
+                    </div>
+                    <div class='checkbox__label'>Disabled</div>
+                  </div>
+                </label>
+              </div>
+              <div class="form__input-group">
+                <label class='radio'>
+                  <input type='radio' name='radio' class='radio__input'>
+                  <div class='radio__state'>
+                    <div class='radio__control'></div>
+                    <div class='radio__label'>Default</div>
+                  </div>
+                </label>
+                <label class='radio'>
+                  <input type='radio' name='radio' class='radio__input' checked>
+                  <div class='radio__state'>
+                    <div class='radio__control'></div>
+                    <div class='radio__label'>Selected</div>
+                  </div>
+                </label>
+                <label class='radio'>
+                  <input type='radio' name='radio' class='radio__input' disabled>
+                  <div class='radio__state'>
+                    <div class='radio__control'></div>
+                    <div class='radio__label'>Disabled</div>
+                  </div>
+                </label>
+                </div>
+                <div class="form__input-group">
+                <label class='toggle'>
+                  <input type='checkbox' class='toggle__input'>
+                  <div class='toggle__state'>
+                    <div class='toggle__icon'></div>
+                    <div class='toggle__label'>Off</div>
+                  </div>
+                </label>
+                <label class='toggle'>
+                  <input type='checkbox' class='toggle__input' checked>
+                  <div class='toggle__state'>
+                    <div class='toggle__icon'></div>
+                    <div class='toggle__label'>On</div>
+                  </div>
+                </label>
+                <label class='toggle'>
+                  <input type='checkbox' class='toggle__input' disabled>
+                  <div class='toggle__state'>
+                    <div class='toggle__icon'></div>
+                    <div class='toggle__label'>Disabled</div>
+                  </div>
+                </label>
+                </div>
+              </div>
+                <div class="form__text-fields">
+                  <div class='input'>
+                    <label class='input__label'>Label</label>
+                    <div class='input__control'>
+                      <input class='input__field' type='text' placeholder="Placeholder">
+                      <svg class='input__icon'>
+                        <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+                        <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='input input_success'>
+                    <label class='input__label'>Success</label>
+                    <div class='input__control'>
+                      <input class='input__field' type='text' placeholder="Success">
+                      <svg class='input__icon'>
+                        <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+                        <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='input input_invalid'>
+                    <label class='input__label'>Error</label>
+                    <div class='input__control'>
+                      <input class='input__field' type='text' placeholder="Error">
+                      <svg class='input__icon'>
+                        <use class="input__icon_success" href='../../assets/images/sprite.svg#success'></use>
+                        <use class="input__icon_invalid" href='../../assets/images/sprite.svg#error'></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </form>
+          </div>
+    </main>
+    <footer class="footer footer_inner">
+      <div class="container">
+        Reusable component library
+      </div>
+    </footer>
+  </div>
+  <script src="./../components/tabs/tabs.js" async defer></script>
+</body>
+
+</html>>

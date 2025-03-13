@@ -6,11 +6,15 @@
     grid-gap: 1rem;
 }
 
-.form_type_component {
-    display: flex;
-    gap: 2rem;
+.form_type_component-page {
     padding: 58px 0 64px;
 } 
+
+.form__inputs {
+    display: flex;
+    gap: 42px;
+    margin-bottom: 64px;
+}
 
 .form__input-group {
     display: flex;
