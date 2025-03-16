@@ -12,6 +12,7 @@
 @import '../../06-lection4/01-avatar/avatar.css';
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../07-lection5/04-input/input.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
 @import '../../components/header/header.css';
 @import '../../components/tab/tab.css';
 @import '../../components/tabs/tabs.css';
@@ -25,6 +26,8 @@
 @import '../../components/logo/logo.css';
 @import '../../components/preview/preview.css';
 @import '../../components/code-snippet/code-snippet.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 
 :root {

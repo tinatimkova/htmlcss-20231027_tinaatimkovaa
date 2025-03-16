@@ -4,9 +4,38 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../burger-btn/burger-btn.css">
         <script defer src="./burger-menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-
+          <label class='burger-btn'>
+            <input class='burger-btn__input' type='checkbox'>
+            <svg class='burger-btn__icon'>
+              <use class='burger-btn__icon_open' href='../../assets/images/sprite.svg#burger-btn'/>
+              <use class='burger-btn__icon_close' href='../../assets/images/sprite.svg#close'>
+            </svg>
+          </label>
+            <div class='burger-menu'>
+            <div class='burger-menu__theme-toggle'>
+              <span class='burger-menu__theme-text'>Dark mode</span>
+              <label class='burger-menu__toggle toggle'>
+                <input type='checkbox' class='toggle__input'>
+                <div class='toggle__state'>
+                  <div class='toggle__icon'></div>
+                </div>
+              </label>
+            </div>
+            <nav class='burger-menu__nav'>
+              <h4 class='burger-menu__title'>Components</h4>
+              <a class='burger-menu__link' href='#'>Modal</a>
+              <a class='burger-menu__link' href='#'>Tooltip</a>
+              <a class='burger-menu__link' href='#'>Avatar</a>
+              <a class='burger-menu__link' href='#'>Calendar</a>
+              <a class='burger-menu__link' href='#'>Histogram</a>
+              <a class='burger-menu__link' href='#'>Custom form elements</a>
+              <a class='burger-menu__link burger-menu__link_main-page' href='#'>Main page</a>
+            </nav>
+          </div>          
     </body>
 </html>

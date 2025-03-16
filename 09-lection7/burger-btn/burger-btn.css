@@ -1,0 +1,43 @@
+.burger-btn {
+    cursor: pointer;
+    padding: 16px 12px;
+    display: inline-block;
+  }
+  
+  .burger-btn:has(.burger-btn__input:checked) ~ .burger-menu {
+    transform: none;
+  }
+  
+  .burger-btn__input {
+    position: absolute;
+    left: -100%;
+  } 
+  
+  .burger-btn__input:focus ~ .burger-btn__icon {
+    background: var(--grey-2);
+  }
+  
+  .burger-btn__input:checked ~ .burger-btn__icon .burger-btn__icon_open,
+  .burger-btn__icon_close  {
+    opacity: 0;
+  }
+  
+  .burger-btn__input:checked ~ .burger-btn__icon .burger-btn__icon_close,
+  .burger-btn__icon_open {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+  }
+  
+  .burger-btn__icon {
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+      border-radius: 50%;
+    }
+  
+
+@media screen and (min-width: 576px) { 
+    .burger-btn {
+        display: none;
+    }
+}
