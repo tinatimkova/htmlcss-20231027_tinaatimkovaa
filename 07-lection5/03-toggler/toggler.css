@@ -30,7 +30,7 @@
   border: 1px solid var(--grey-2);
   border-radius: 1.5em;
   cursor: pointer;
-  transition: background-color 500ms ease-in-out, border-color 500ms ease-in-out;
+  transition: all .5s ease;
 }
 
 .toggle__icon:before {
