@@ -9,3 +9,9 @@
     grid-column-gap: 56px;
     height: 100%;
 }
+
+@media screen and (max-width: 576px) {
+    .container_inner {
+        display: block;
+    }
+}

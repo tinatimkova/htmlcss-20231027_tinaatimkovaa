@@ -48,4 +48,8 @@
     .header__logo {
         justify-content: center;
     }
+
+    .header__top_inner {
+        padding: 17px 0px;
+    }
 }

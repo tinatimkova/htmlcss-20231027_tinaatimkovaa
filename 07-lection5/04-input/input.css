@@ -76,3 +76,12 @@
   padding: 17px 40px 13px 14px;
 }
 
+@media screen and (max-width: 576px) {
+  .input__field {
+    font-size: .75rem;
+  }
+
+  .input {
+    display: block;
+  }
+}
