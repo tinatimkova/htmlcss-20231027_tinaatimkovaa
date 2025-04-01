@@ -36,6 +36,10 @@
     color: var(--notification);
 }
 
+.sidebar__list-item:last-child {
+    margin-top: 22px;
+}
+
 @media screen and (max-width: 576px) {
     .sidebar {
         display: none;

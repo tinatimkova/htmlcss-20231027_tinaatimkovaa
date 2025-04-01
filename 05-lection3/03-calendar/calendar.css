@@ -3,6 +3,7 @@
     border: 1px solid var(--Gray-3, #ACB5BD);
     border-radius: 8px;
     padding: 28px 26px 32px;
+    min-width: 220px;
   }
   
   .calendar__title {
@@ -13,15 +14,16 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 120% */
+    margin-bottom: 24px;
   }
   
   .calendar__wrapper {
     position: relative;
-    /* padding-bottom: 100%; */
+    padding-bottom: 100%;
   }
   
   .calendar__inner {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -45,7 +47,7 @@
   }
   
   .calendar__item_first {
-    grid-column: 5;
+    grid-column: 7;
   }
   
   .calendar__item_day {
