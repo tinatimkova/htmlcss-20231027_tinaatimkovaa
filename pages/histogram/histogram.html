@@ -1,0 +1,136 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Histogram</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/css/main.css">
+    </head>
+    <body>
+        <div class="page page_inner">
+            <header class="header">
+                <div class="container">
+                    <div class="header__top header__top_inner">
+                        <div class="logo header__logo ">
+                            <span class="logo__img logo__img_square"></span>
+                            <span class="logo__img logo__img_circle"></span>
+                            <span class="logo__img logo__img_triangle"></span>
+                        </div>
+                        <div class="header__theme">
+                            <svg class="header__theme-icon">
+                             <use class="header__theme-icon_light" href="../../assets/images/sprite.svg#sun" />
+                            </svg>
+                            <label class='header__theme-toggle toggle'>
+                             <input type='checkbox' class='toggle__input'>
+                             <div class='toggle__state'>
+                               <div class='toggle__icon'></div>
+                             </div>
+                           </label>
+                            <svg class="header__theme-icon">
+                             <use class="header__theme-icon_dark" href="../../assets/images/sprite.svg#moon" />
+                            </svg>
+                         </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page__main">
+                <div class="container container_inner">
+                    <aside class="sidebar">
+                        <h4 class="sidebar__section-title">Components</h4>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Modal</a></li>
+                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Tooltip</a></li>
+                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Avatar</a></li>
+                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Calendar</a></li>
+                            <li class="sidebar__list-item"><a href="./histogram.html" class="sidebar__link">Histogram</a></li>
+                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                            <li class="sidebar__list-item"><a href="../../index.html" class="sidebar__link">Main page</a></li>
+                        </ul>
+                    </aside>
+                    <div class="component">
+                        <div class='component__display'>
+                            <h3 class="component__title">Histogram</h3>
+                            <div class="histogram component__histogram">
+                                <div class="histogram__top">
+                                    <h4 class="histogram__title">Total orders</h4>
+                                    <a class="histogram__link" href="#">View all</a>
+                                    <div class="histogram__stat">50254</div>
+                                </div>
+                                <div class="histogram__chart">
+                                    <span style="height:100%;" class="histogram__bar"></span>
+                                    <span style="height:70%;" class="histogram__bar"></span>
+                                    <span style="height:44%;" class="histogram__bar"></span>
+                                    <span style="height:78%;" class="histogram__bar"></span>
+                                    <span style="height:44%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:78%;" class="histogram__bar"></span>
+                                    <span style="height:100%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:44%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:70%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:100%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:78%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:44%;" class="histogram__bar"></span>
+                                    <span style="height:70%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:78%;" class="histogram__bar"></span>
+                                    <span style="height:70%;" class="histogram__bar"></span>
+                                    <span style="height:90%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:60%;" class="histogram__bar"></span>
+                                    <span style="height:22%;" class="histogram__bar"></span>
+                                    <span style="height:70%;" class="histogram__bar"></span>
+                                    <span style="height:34%;" class="histogram__bar"></span>
+                                </div>
+                            </div>
+                            <ul class="tabs__menu">
+                                <li class="tab tab_active" id="html"><a href="#" class="tab__link">html</a></li>
+                                <li class="tab" id="css"><a href="#" class="tab__link">css</a></li>
+                            </ul>
+                        </div>
+                        <div class="component__code">
+                            <pre class="code-snippet"><code class="code-snippet__html">
+&lt;div class="histogram"&gt;
+    &lt;div class="histogram__top"&gt;
+        &lt;h4 class="histogram__title"&gt;Total orders&lt;/h4&gt;
+        &lt;a class="histogram__link" href="#"&gt;View all&lt;/a&gt;
+        &lt;div class="histogram__stat"&gt;50254&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="histogram__chart"&gt;
+        &lt;span style="height:100%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:70%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:44%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:78%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:44%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:60%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:78%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:100%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:22%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:44%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:60%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:70%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:22%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:100%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:22%;" class="histogram__bar"&gt;&lt;/span&gt;
+        &lt;span style="height:78%;" class="histogram__bar"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer footer_inner">
+                <div class="container">
+                    Reusable component library
+                </div>
+            </footer> 
+        </div>   
+        <script src="../../components/tabs/tabs.js" async defer></script>
+    </body>
+</html>

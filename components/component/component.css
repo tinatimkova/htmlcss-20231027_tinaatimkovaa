@@ -37,3 +37,8 @@
 .component__modal-btn {
     padding: 15px 50px;
 }
+
+.component__histogram {
+    max-width: 300px;
+    margin: 24px 0;
+}

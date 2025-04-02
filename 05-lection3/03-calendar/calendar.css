@@ -5,6 +5,10 @@
     padding: 28px 26px 32px;
     min-width: 220px;
   }
+
+  .calendar_preview {
+    padding: 5%;
+  }
   
   .calendar__title {
     text-align: center;
