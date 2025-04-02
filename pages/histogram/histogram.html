@@ -38,12 +38,12 @@
                     <aside class="sidebar">
                         <h4 class="sidebar__section-title">Components</h4>
                         <ul class="sidebar__list">
-                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Modal</a></li>
+                            <li class="sidebar__list-item"><a href="../modal/index.html" class="sidebar__link">Modal</a></li>
                             <li class="sidebar__list-item"><a href="#" class="sidebar__link">Tooltip</a></li>
-                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Avatar</a></li>
+                            <li class="sidebar__list-item"><a href="../avatar/index.html" class="sidebar__link">Avatar</a></li>
                             <li class="sidebar__list-item"><a href="#" class="sidebar__link">Calendar</a></li>
-                            <li class="sidebar__list-item"><a href="./histogram.html" class="sidebar__link">Histogram</a></li>
-                            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                            <li class="sidebar__list-item"><a href="./histogram.html" class="sidebar__link sidebar__link_active">Histogram</a></li>
+                            <li class="sidebar__list-item"><a href="../formElements/index.html" class="sidebar__link">Custom form elements</a></li>
                             <li class="sidebar__list-item"><a href="../../index.html" class="sidebar__link">Main page</a></li>
                         </ul>
                     </aside>
@@ -90,12 +90,12 @@
                                 </div>
                             </div>
                             <ul class="tabs__menu">
-                                <li class="tab tab_active" id="html"><a href="#" class="tab__link">html</a></li>
-                                <li class="tab" id="css"><a href="#" class="tab__link">css</a></li>
+                                <li class="tab tab_active"><a href="#" class="tab__link">html</a></li>
+                                <li class="tab"><a href="#" class="tab__link">css</a></li>
                             </ul>
                         </div>
                         <div class="component__code">
-                            <pre class="code-snippet"><code class="code-snippet__html">
+                            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">
 &lt;div class="histogram"&gt;
     &lt;div class="histogram__top"&gt;
         &lt;h4 class="histogram__title"&gt;Total orders&lt;/h4&gt;
@@ -121,6 +121,48 @@
         &lt;span style="height:78%;" class="histogram__bar"&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+        <pre id="css" class="code-snippet"><code class="code-snippet__css">.histogram {
+    width: 100%;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+    color: var(--black, #212429);
+}
+                        
+.histogram__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+                                           
+.histogram__link {
+    position: absolute;
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--blue);
+    padding-top: 3px;
+}
+                            
+.histogram__stat {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 39px;
+}
+                        
+.histogram__chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
+    height: 50px;
+    transform-origin: 0 100%;
+    animation: slide-up 0.5s ease;
+}
+                        
+.histogram__bar {
+    flex: 1;
+    background: var(--blue);
+}
+                        </code></pre>
                         </div>
                     </div>
                 </div>
