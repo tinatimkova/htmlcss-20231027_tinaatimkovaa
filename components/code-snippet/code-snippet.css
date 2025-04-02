@@ -1,7 +1,8 @@
 .code-snippet {
     margin: 0;
+    display: none;
 }
 
-.code-snippet__tag {
-    color: var(--red);
+.code-snippet_active {
+    display: block;
 }

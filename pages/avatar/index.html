@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Custom Form Elements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <script> </script>
+</head>
+<body>
+  <div class="page page_inner">
+    <header class="header">
+      <div class="container">
+        <div class="header__top header__top_inner">
+          <div class="logo header__logo">
+            <span class="logo__img logo__img_square"></span>
+            <span class="logo__img logo__img_circle"></span>
+            <span class="logo__img logo__img_triangle"></span>
+          </div>
+          <div class="header__theme">
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_light" href="../../assets/images/sprite.svg#sun" />
+            </svg>
+            <label class='header__theme-toggle toggle'>
+              <input type='checkbox' class='toggle__input'>
+              <div class='toggle__state'>
+                <div class='toggle__icon'></div>
+              </div>
+            </label>
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_dark" href="../../assets/images/sprite.svg#moon" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="container container_inner">
+        <aside class="sidebar">
+          <h4 class="sidebar__section-title">Components</h4>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item"><a href="../../05-lection3/02-modal/" class="sidebar__link">Modal</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Tooltip</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Avatar</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Calendar</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Histogram</a></li>
+            <li class="sidebar__list-item"><a href="../formElements/index.html" class="sidebar__link">Custom form elements</a></li>
+            <li class="sidebar__list-item"><a href="../../index.html" class="sidebar__link">Main page</a></li>
+          </ul>
+        </aside>
+        <div class="component">
+          <div class='component__display'>
+            <h3 class="component__title">Avatar</h3>
+            <div class='avatar component__avatar'>
+                <img class='avatar__img' src="../../assets/images/avatar.png" alt='avatar image'>
+            </div>
+            <ul class="tabs__menu component__tabs">
+                <li class="tab tab_active"><a href="#" class="tab__link">html</a></li>
+                <li class="tab"><a href="#" class="tab__link">css</a></li>
+            </ul>
+          </div>
+          <div class="component__code">
+            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;div class='avatar'&gt;
+    &lt;img class='avatar__img' src="avatar.png" alt='avatar image'&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre id="css" class="code-snippet"><code class="code-snippet__css">.avatar {
+    display: inline-block;
+    width: 102px;
+    height: 102px;
+}
+                  
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+                
+.avatar_component-preview {
+    width: 160px;
+    height: 160px;
+}
+            </code>
+        </pre>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer_inner">
+      <div class="container">
+        Reusable component library
+      </div>
+    </footer>
+  </div>
+  <script src="../../components/tabs/tabs.js"></script>
+</body>
+</html>
