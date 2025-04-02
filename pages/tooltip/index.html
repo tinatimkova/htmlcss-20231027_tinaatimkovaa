@@ -2,10 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Avatar</title>
+  <title>Tooltip</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../assets/css/main.css">
-  <script> </script>
 </head>
 <body>
   <div class="page page_inner">
@@ -40,8 +39,8 @@
           <h4 class="sidebar__section-title">Components</h4>
           <ul class="sidebar__list">
             <li class="sidebar__list-item"><a href="../modal/index.html" class="sidebar__link">Modal</a></li>
-            <li class="sidebar__list-item"><a href="../tooltip/index.html" class="sidebar__link">Tooltip</a></li>
-            <li class="sidebar__list-item"><a href="./index.html" class="sidebar__link sidebar__link_active">Avatar</a></li>
+            <li class="sidebar__list-item"><a href="./index.html" class="sidebar__link sidebar__link_active">Tooltip</a></li>
+            <li class="sidebar__list-item"><a href="../avatar/index.html" class="sidebar__link">Avatar</a></li>
             <li class="sidebar__list-item"><a href="../calendar/index.html" class="sidebar__link">Calendar</a></li>
             <li class="sidebar__list-item"><a href="../histogram/index.html" class="sidebar__link">Histogram</a></li>
             <li class="sidebar__list-item"><a href="../formElements/index.html" class="sidebar__link">Custom form elements</a></li>
@@ -50,9 +49,14 @@
         </aside>
         <div class="component">
           <div class='component__display'>
-            <h3 class="component__title">Avatar</h3>
-            <div class='avatar component__avatar'>
-                <img class='avatar__img' src="../../assets/images/avatar.png" alt='avatar image'>
+            <h3 class="component__title">Tooltip</h3>
+            <div class='tooltip component__tooltip'>
+                <div class='tooltip__trigger'>
+                    <svg class="tooltip__icon">
+                        <use href="./../../assets/images/sprite.svg#question"></use>
+                    </svg>
+                </div>
+                <div class='tooltip__bubble'>Helper Text</div>
             </div>
             <ul class="tabs__menu component__tabs">
                 <li class="tab tab_active"><a href="#" class="tab__link">html</a></li>
@@ -60,27 +64,53 @@
             </ul>
           </div>
           <div class="component__code">
-            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;div class='avatar'&gt;
-    &lt;img class='avatar__img' src="avatar.png" alt='avatar image'&gt;
+            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;div class='tooltip'&gt;
+    &lt;div class="tooltip__trigger"&gt;
+        &lt;svg class="tooltip__icon"&gt;
+            &lt;use href="sprite.svg#question"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip__bubble"&gt;Helper Text&lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
-            <pre id="css" class="code-snippet"><code class="code-snippet__css">.avatar {
+            </code></pre>
+            <pre id="css" class="code-snippet"><code class="code-snippet__css">.tooltip {
+    position: relative;
     display: inline-block;
-    width: 102px;
-    height: 102px;
 }
-                  
-.avatar__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+              
+.tooltip__bubble {
+    transition: opacity 250ms ease-in;
+    opacity: 0; 
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: #4263EB;
+    color: var(--grey-2, #DDE2E5);
+    text-align: center;
+    padding: 13px 21px 8px;
+    white-space: nowrap;
 }
-                
-.avatar_component-preview {
-    width: 160px;
-    height: 160px;
+              
+.tooltip__trigger:hover ~ .tooltip__bubble {
+    opacity: 1;
 }
+            
+.tooltip__bubble:before {
+    position: absolute;
+    content: '';
+    border: 6px solid transparent;
+    border-top-color: #4263EB;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+            
+.tooltip__icon {
+    width: 24px;
+    height: 24px;
+}       
             </code>
         </pre>
         </div>

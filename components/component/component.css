@@ -42,3 +42,13 @@
     max-width: 300px;
     margin: 24px 0;
 }
+
+.component__tooltip {
+    transform: translate(200%, 200%);
+    margin-bottom: 3rem;
+}
+
+.component__calendar {
+    max-width: 300px;
+    width: 300px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <div class="page page_inner">
+    <header class="header">
+      <div class="container">
+        <div class="header__top header__top_inner">
+          <div class="logo header__logo">
+            <span class="logo__img logo__img_square"></span>
+            <span class="logo__img logo__img_circle"></span>
+            <span class="logo__img logo__img_triangle"></span>
+          </div>
+          <div class="header__theme">
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_light" href="../../assets/images/sprite.svg#sun" />
+            </svg>
+            <label class='header__theme-toggle toggle'>
+              <input type='checkbox' class='toggle__input'>
+              <div class='toggle__state'>
+                <div class='toggle__icon'></div>
+              </div>
+            </label>
+            <svg class="header__theme-icon">
+              <use class="header__theme-icon_dark" href="../../assets/images/sprite.svg#moon" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="container container_inner">
+        <aside class="sidebar">
+          <h4 class="sidebar__section-title">Components</h4>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item"><a href="../modal/index.html" class="sidebar__link">Modal</a></li>
+            <li class="sidebar__list-item"><a href="../tooltip/index.html" class="sidebar__link">Tooltip</a></li>
+            <li class="sidebar__list-item"><a href="../avatar/index.html" class="sidebar__link">Avatar</a></li>
+            <li class="sidebar__list-item"><a href="./index.html" class="sidebar__link sidebar__link_active">Calendar</a></li>
+            <li class="sidebar__list-item"><a href="../histogram/index.html" class="sidebar__link">Histogram</a></li>
+            <li class="sidebar__list-item"><a href="../formElements/index.html" class="sidebar__link">Custom form elements</a></li>
+            <li class="sidebar__list-item"><a href="../../index.html" class="sidebar__link">Main page</a></li>
+          </ul>
+        </aside>
+        <div class="component">
+          <div class='component__display'>
+            <h3 class="component__title">Calendar</h3>
+            <div class='calendar component__calendar'>
+                <h4 class='calendar__title'>March 2025</h4>
+                <div class="calendar__wrapper">
+                  <div class='calendar__inner'>
+                    <span class='calendar__item calendar__item_day'>Mon</span>
+                    <span class='calendar__item calendar__item_day'>Tue</span>
+                    <span class='calendar__item calendar__item_day'>Wed</span>
+                    <span class='calendar__item calendar__item_day'>Thu</span>
+                    <span class='calendar__item calendar__item_day'>Fri</span>
+                    <span class='calendar__item calendar__item_day'>Sat</span>
+                    <span class='calendar__item calendar__item_day'>Sun</span>
+                    <span class='calendar__item calendar__item_first'>1</span>
+                    <span class='calendar__item'>2</span>
+                    <span class='calendar__item'>3</span>
+                    <span class='calendar__item'>4</span>
+                    <span class='calendar__item'>5</span>
+                    <span class='calendar__item'>6</span>
+                    <span class='calendar__item'>7</span>
+                    <span class='calendar__item'>8</span>
+                    <span class='calendar__item'>9</span>
+                    <span class='calendar__item'>10</span>
+                    <span class='calendar__item'>11</span>
+                    <span class='calendar__item'>12</span>
+                    <span class='calendar__item'>13</span>
+                    <span class='calendar__item'>14</span>
+                    <span class='calendar__item'>15</span>
+                    <span class='calendar__item'>16</span>
+                    <span class='calendar__item'>17</span>
+                    <span class='calendar__item calendar__item_selected'>18</span>
+                    <span class='calendar__item calendar__item_selected-range'>19</span>
+                    <span class='calendar__item calendar__item_selected-range'>20</span>
+                    <span class='calendar__item calendar__item_selected-range'>21</span>
+                    <span class='calendar__item calendar__item_selected-range'>22</span>
+                    <span class='calendar__item calendar__item_selected'>23</span>
+                    <span class='calendar__item'>24</span>
+                    <span class='calendar__item'>25</span>
+                    <span class='calendar__item'>26</span>
+                    <span class='calendar__item'>27</span>
+                    <span class='calendar__item'>28</span>
+                    <span class='calendar__item'>29</span>
+                    <span class='calendar__item'>30</span>
+                    <span class='calendar__item'>31</span>
+                </div>
+                </div>
+              </div>
+            <ul class="tabs__menu component__tabs">
+                <li class="tab tab_active"><a href="#" class="tab__link">html</a></li>
+                <li class="tab"><a href="#" class="tab__link">css</a></li>
+            </ul>
+          </div>
+          <div class="component__code">
+            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;div class='calendar'&gt;
+    &lt;h4 class="calendar__title"&gt;March 2025&lt;/h4&gt;
+    &lt;div class="calendar__wrapper"&gt;
+        &lt;div class="calendar__inner"&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Mon&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Tue&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Wed&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Thu&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Fri&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Sat&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_day"&gt;Sun&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_first"&gt;1&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;2&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;3&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;4&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;5&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;6&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;7&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;8&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;9&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;10&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;11&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;12&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;13&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;14&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;15&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;16&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;17&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected"&gt;18&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected-range"&gt;19&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected-range"&gt;20&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected-range"&gt;21&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected-range"&gt;22&lt;/span&gt;
+            &lt;span class="calendar__item calendar__item_selected"&gt;23&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;24&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;25&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;26&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;27&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;28&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;29&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;30&lt;/span&gt;
+            &lt;span class="calendar__item"&gt;31&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+            <pre id="css" class="code-snippet"><code class="code-snippet__css">.calendar {
+    display: inline-block;
+    border: 1px solid var(--Gray-3, #ACB5BD);
+    border-radius: 8px;
+    padding: 28px 26px 32px;
+    min-width: 220px;
+}
+              
+.calendar__title {
+    text-align: center;
+    color: #334D6E;
+    margin-bottom: 24px;
+}
+              
+.calendar__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+              
+.calendar__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+              
+.calendar__item {
+    color: #334D6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+              
+.calendar__item_first {
+    grid-column: 7;
+}
+              
+.calendar__item_day {
+    color: #90A0B7;
+}
+              
+.calendar__item_selected-range {
+    background-color: rgba(160, 177, 245, 0.2);
+}
+              
+.calendar__item_selected {
+    color: #FFF;
+    background: #4263EB;
+}
+            </code>
+        </pre>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer_inner">
+      <div class="container">
+        Reusable component library
+      </div>
+    </footer>
+  </div>
+  <script src="../../components/tabs/tabs.js"></script>
+</body>
+</html>
