@@ -23,3 +23,8 @@
 .component__display_form-elems {
     border: none;
 }
+
+.component__histogram {
+    max-width: 300px;
+    margin: 24px 0;
+}
