@@ -32,8 +32,12 @@
     transition: color 200ms ease-in-out;
 }
 
-.sidebar__link:hover {
+.sidebar__link_active {
     color: var(--notification);
+}
+
+.sidebar__link:hover {
+    color: var(--grey-3);
 }
 
 .sidebar__list-item:last-child {

@@ -45,6 +45,7 @@
   right: 12px;
   top: 12px;
   fill: var(--grey-4);
+  cursor: pointer;
 }
 
 .modal_open {

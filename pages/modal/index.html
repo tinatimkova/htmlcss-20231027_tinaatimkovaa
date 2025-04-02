@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Avatar</title>
+  <title>Modal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <script> </script>
@@ -39,9 +39,9 @@
         <aside class="sidebar">
           <h4 class="sidebar__section-title">Components</h4>
           <ul class="sidebar__list">
-            <li class="sidebar__list-item"><a href="../../05-lection3/02-modal/" class="sidebar__link">Modal</a></li>
+            <li class="sidebar__list-item"><a href="./index.html" class="sidebar__link sidebar__link_active">Modal</a></li>
             <li class="sidebar__list-item"><a href="#" class="sidebar__link">Tooltip</a></li>
-            <li class="sidebar__list-item"><a href="../avatar/index.html" class="sidebar__link">Avatar</a></li>
+            <li class="sidebar__list-item"><a href="#" class="sidebar__link">Avatar</a></li>
             <li class="sidebar__list-item"><a href="#" class="sidebar__link">Calendar</a></li>
             <li class="sidebar__list-item"><a href="#" class="sidebar__link">Histogram</a></li>
             <li class="sidebar__list-item"><a href="../formElements/index.html" class="sidebar__link">Custom form elements</a></li>
@@ -50,9 +50,17 @@
         </aside>
         <div class="component">
           <div class='component__display'>
-            <h3 class="component__title">Avatar</h3>
-            <div class='avatar component__avatar'>
-                <img class='avatar__img' src="../../assets/images/avatar.png" alt='avatar image'>
+            <h3 class="component__title">Modal</h3>
+            <button id="modal-open" class='btn btn_primary component__modal-btn'>Open modal</button> 
+            <div id="modal" class="modal">
+                <div class="modal__window">
+                    <svg id="modal-close" class='modal__close-icon'>
+                        <use href="../../assets/images/sprite.svg#close"></use>
+                    </svg>
+                    <h4 class="modal__title">Modal title</h4>
+                    <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                </div>
             </div>
             <ul class="tabs__menu component__tabs">
                 <li class="tab tab_active"><a href="#" class="tab__link">html</a></li>
@@ -60,26 +68,64 @@
             </ul>
           </div>
           <div class="component__code">
-            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;div class='avatar'&gt;
-    &lt;img class='avatar__img' src="avatar.png" alt='avatar image'&gt;
+            <pre id="html" class="code-snippet code-snippet_active"><code class="code-snippet__html">&lt;button id="modal-open"&gt;Open modal&lt;/button&gt;
+
+&lt;div class="modal__window"&gt;
+    &lt;svg id="modal-close" class="modal__close-icon"&gt;
+        &lt;use href="sprite.svg#close"&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;h4 class="modal__title"&gt;Modal title&lt;/h4&gt;
+    &lt;div class="modal__text"&gt;
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+        Velit officia consequat duis enim velit mollit.
+        Exercitation veniam consequat sunt nostrud amet.
+    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <pre id="css" class="code-snippet"><code class="code-snippet__css">.avatar {
-    display: inline-block;
-    width: 102px;
-    height: 102px;
+            <pre id="css" class="code-snippet"><code class="code-snippet__css">.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(196, 196, 196, 0.5);
 }
-                  
-.avatar__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px 33px;
+  border-radius: 8px;
+  background: #FFF;
+  max-width: 428px;
 }
-                
-.avatar_component-preview {
-    width: 160px;
-    height: 160px;
+
+.modal__title {
+  padding-bottom: 14px; 
+  color: #334D6E;
+}
+
+.modal__text {
+  color: var(--grey-4, #495057);
+  font-weight: 400;
+  max-width: 348px;
+}
+
+.modal__close-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  fill: var(--grey-4);
+}
+
+.modal_open {
+  display: block;
+  position: static;
 }
             </code>
         </pre>
@@ -94,5 +140,6 @@
     </footer>
   </div>
   <script src="../../components/tabs/tabs.js"></script>
+  <script src="../../05-lection3/02-modal/index.js"></script> 
 </body>
 </html>

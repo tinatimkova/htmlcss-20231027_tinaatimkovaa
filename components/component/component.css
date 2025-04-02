@@ -33,3 +33,7 @@
 .component__tabs {
     margin-top: 2rem;
 }
+
+.component__modal-btn {
+    padding: 15px 50px;
+}
