@@ -1,8 +1,18 @@
-.tabs__menu {
-    display: flex;
-    flex: row;
-    gap: 24px;
-    align-items: center;
-    list-style: none;
-    padding: 0;
+.tabs {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    .tabs {
+        display: block;
+    }
+
+    .tabs__menu {
+        display: flex;
+        flex: row;
+        gap: 24px;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
 }

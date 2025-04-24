@@ -3,13 +3,8 @@
 }
 
 .preview__cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
 }
-
-.preview__card {
-  flex-basis: 30%;
-}
-
